@@ -394,9 +394,9 @@
         window.onload = function () {
             const printBtn = document.createElement('button');
             printBtn.textContent = 'Download as PDF';
-            printBtn.style.cssText = 'position: fixed; top: 20px; right: 20px; padding: 12px 24px; background: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: 600; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 1000;';
-            printBtn.onmouseover = function () { this.style.background = '#34495e'; };
-            printBtn.onmouseout = function () { this.style.background = '#2c3e50'; };
+                printBtn.style.cssText = 'position: fixed; top: 20px; right: 20px; padding: 12px 24px; background: #f0f0f0; color: #333; border: 1px solid #dcdcdc; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: 600; box-shadow: 0 1px 4px rgba(0,0,0,0.08); z-index: 1000;';
+            printBtn.onmouseover = function () { this.style.background = '#e6e6e6'; };
+            printBtn.onmouseout = function () { this.style.background = '#f0f0f0'; };
             printBtn.onclick = function () { window.print(); };
             document.body.appendChild(printBtn);
         };
