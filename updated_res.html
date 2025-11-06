@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulthanul Faris - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+            line-height: 1.4;
+            color: black;
+            background: white;
+        }
+
+        .container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 10mm 12mm;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+
+        .name {
+            font-size: 36px;
+            font-weight: 700;
+            color: black;
+            margin-bottom: 2px;
+            letter-spacing: 1px;
+            margin-top: -15px;
+        }
+
+        .title {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .contact {
+            font-size: 12px;
+            color: #666;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: -2px;
+            margin-bottom: 5px;
+        }
+
+        .contact a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .section {
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 4px;
+        }
+
+        .summary {
+            font-size: 13px;
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+        .job {
+            margin-bottom: 12px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+
+        .job-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .company {
+            font-size: 14px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .date {
+            font-size: 11px;
+            color: #777;
+            font-style: italic;
+        }
+
+        .category {
+            font-size: 12px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 6px;
+            margin-bottom: 3px;
+        }
+
+        .job-desc {
+            font-size: 12px;
+            line-height: 1.4;
+            margin-bottom: 3px;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px 25px;
+            font-size: 11.5px;
+        }
+
+        .skill-item {
+            display: flex;
+            gap: 8px;
+        }
+
+        .skill-label {
+            font-weight: 600;
+            color: #2c3e50;
+            min-width: 90px;
+        }
+
+        .skill-value {
+            color: black;
+            font-size: 13px;
+        }
+        .mail , .phone , .location {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .achievement {
+            margin-bottom: 8px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .achievement-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .achievement-desc {
+            color: #555;
+        }
+
+        .learning {
+            font-size: 12px;
+            line-height: 1.4;
+            margin-bottom: 6px;
+        }
+
+        .project {
+            margin-bottom: 8px;
+        }
+
+        .project-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 2px;
+        }
+
+        .project-desc {
+            font-size: 12px;
+            color: black;
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                max-width: 100%;
+                min-height: auto;
+                padding: 10mm 12mm;
+            }
+
+            button {
+                display: none !important;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name">SULTHANUL PARIS</div>
+            <div class="title">Full Stack Developer | Python & React Developer</div>
+            <div class="contact">
+                <span class="mail"> farishf24@gmail.com</span>
+                <span class="phone"> +91 7619443297</span>
+                <span class="location"> Mangalore, India </span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="summary">
+                Full Stack Developer with 1+ year of experience building scalable web applications and cloud solutions.
+                Specialized in Python FastAPI for backend and React.js for frontend, with strong AWS cloud expertise.
+                Focused on writing clean, efficient code and delivering production-ready solutions with cost-effective
+                cloud architecture.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Full Stack Developer</span> |
+                        <span class="company">Raasoft Infotech Pvt. Ltd. Mangalore</span>
+                    </div>
+                    <div class="date">October 2024 - Present</div>
+                </div>
+
+                <div class="category">Backend Development</div>
+                <div class="job-desc">
+                    Build RESTful APIs with Python FastAPI following standard coding practices and well-structured architecture • Manage dependencies with Poetry and uv package managers • Work with PostgreSQL and Snowflake databases • Implement secure authentication using JWT and OAuth2 • Design maintainable microservices with proper error handling
+                </div>
+
+                <div class="category">Cloud & DevOps</div>
+                <div class="job-desc">
+                    Deploy applications on AWS using Lambda, EC2, S3, API Gateway, SNS, SQS, Step Functions, Cognito, CloudWatch, and IAM • Optimize cloud costs and maintain efficient billing practices • Write CI/CD pipelines in GitLab for automated deployments • Monitor application performance with CloudWatch • Work with Azure DevOps for version control
+                </div>
+
+                <div class="category">Frontend Development & ATM Integration</div>
+                <div class="job-desc">
+                    Build responsive UIs with React.js, Kendo UI, and Material-UI • Integrate RESTful APIs and WebSocket connections for real-time data updates • Developed private Node.js package to bridge communication between React frontend and ATM hardware for seamless integration • Handle real-time events and user interactions from ATM machine through custom bridge packages • Optimize page performance and user experience
+                </div>
+
+                <div class="category">Development Workflow</div>
+                <div class="job-desc">
+                    Use Git/GitLab for version control with proper branching and code reviews • Maintain clean, organized codebase with proper folder structure • Track work with Jira in agile sprints • Apply data structures and algorithms for efficient code
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span class="skill-label">Languages:</span>
+                    <span class="skill-value">Python, JavaScript, SQL</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Backend:</span>
+                    <span class="skill-value">FastAPI, RESTful APIs, Microservices</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Frontend:</span>
+                    <span class="skill-value">React.js, WebSocket, Kendo UI, Material-UI, HTML, CSS, Node.js Packages</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Databases:</span>
+                    <span class="skill-value">PostgreSQL, Snowflake, MySQL</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Cloud:</span>
+                    <span class="skill-value">AWS (Lambda, EC2, S3, API Gateway, SNS, SQS, Step Functions, Cognito,
+                        CloudWatch, IAM)</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">DevOps:</span>
+                    <span class="skill-value">GitLab CI/CD, Docker, Git, Poetry, uv</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Tools:</span>
+                    <span class="skill-value">Jira, Azure DevOps, VS Code</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Core Skills:</span>
+                    <span class="skill-value">DSA, OOP, System Design, Authentication, Hardware Integration</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Key Projects</div>
+            <div class="project">
+                <div class="project-title">Super Augmented Reality Educational App | Flutter, Dart</div>
+                <div class="project-desc">
+                    Built an AR application for students featuring 3D model presentations for enhanced learning in human anatomy. Implemented adjustable model sizing and detailed visualization of body parts on mobile devices.
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-title">Metaverse for Virtual India | VR Development, Blender</div>
+                <div class="project-desc">
+                    Developed immersive VR experience showcasing India's cultural heritage using Blender. Created interactive 3D environments for educational purposes with focus on student engagement.
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education-item">
+                <div class="education-degree">Bachelor of Engineering in Computer Science</div>
+                <div class="education-details">P.A. College of Engineering, Mangalore | CGPA: 8.8/10 | 2020 - 2024</div>
+            </div>
+            <div class="education-item">
+                <div class="education-degree">Pre-University College (12th Grade)</div>
+                <div class="education-details">St. Sebastian Pre University College | Percentage: 86.15% | 2019 - 2020</div>
+            </div>
+        </div> -->
+
+        <!-- <div class="section">
+            <div class="section-title">Achievements</div>
+            <div class="achievement">
+                <span class="achievement-title">HackFest Hackathon Winner</span> -
+                <span class="achievement-desc">Won Best Project in Metaverse Track with prize of ₹10,000 at N.M.A.M. Institute of Technology, Karnataka for developing innovative VR and AR educational application.</span>
+            </div>
+            <div class="achievement">
+                <span class="achievement-title">Kaushal24 Competition First Prize</span> -
+                <span class="achievement-desc">Secured first place with prize of ₹5,000 at P.A. College of Engineering for outstanding final year project demonstrating technical excellence and innovation.</span>
+            </div>
+        </div> -->
+
+        <div class="section">
+            <div class="section-title">Continuous Learning</div>
+            <div class="learning">
+                Actively practice data structures and algorithms on LeetCode to improve problem-solving skills and write efficient, optimized code daily.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto print functionality
+        window.onload = function () {
+            const printBtn = document.createElement('button');
+            printBtn.textContent = 'Download as PDF';
+            printBtn.style.cssText = 'position: fixed; top: 20px; right: 20px; padding: 12px 24px; background: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: 600; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 1000;';
+            printBtn.onmouseover = function () { this.style.background = '#34495e'; };
+            printBtn.onmouseout = function () { this.style.background = '#2c3e50'; };
+            printBtn.onclick = function () { window.print(); };
+            document.body.appendChild(printBtn);
+        };
+    </script>
+</body>
+
+</html>
